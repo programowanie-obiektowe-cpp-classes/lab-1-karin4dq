@@ -1,4 +1,4 @@
-#include <print>
+//#include <print>
 #include <cmath>
 #include <iostream>
 #include <stdlib.h>
@@ -14,7 +14,7 @@ public:
 	// Konstruktor domyślny
 	Wektor2D() : x(0), y(0)
 	{
-		std::println("SPRAWDZENIE 1 -> Wartosc x: {}. Wartosc y: {}.", x, y);
+		//std::println("SPRAWDZENIE 1 -> Wartosc x: {}. Wartosc y: {}.", x, y);
 	}
 
 	// Setter dla x
@@ -68,17 +68,17 @@ int main()
 	double x1 = v1.getX();
 	double y1 = v1.getY();
 
-	std::println("SPRAWDZENIE 2 -> Wartosc x1: {}, Wartosc y1: {}.", x1, y1);
+	//std::println("SPRAWDZENIE 2 -> Wartosc x1: {}, Wartosc y1: {}.", x1, y1);
 
 
 	Wektor2D v2{ 2., 2. };
-	std::println("SPRAWDZENIE 3 -> Wartosc x2: {}, Wartosc y2: {}.", v2.getX(), v2.getY());
+	//std::println("SPRAWDZENIE 3 -> Wartosc x2: {}, Wartosc y2: {}.", v2.getX(), v2.getY());
 
 	Wektor2D sum = v1 + v2;
-	std::println("SPRAWDZENIE 4 -> Wynik sumowania: x3: {}, y3: {}.", sum.getX(), sum.getY());
+	//std::println("SPRAWDZENIE 4 -> Wynik sumowania: x3: {}, y3: {}.", sum.getX(), sum.getY());
 
 	double prod = v1 * v2;
-	std::println("SPRAWDZENIE 5 -> Wartosc mnozenia skalarnego: {}", prod);
+	//std::println("SPRAWDZENIE 5 -> Wartosc mnozenia skalarnego: {}", prod);
 
 
 	return 0;
